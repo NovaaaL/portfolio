@@ -166,18 +166,26 @@ h2::after {
 }
 
 .project-info {
-    /* UBAH flex dari 1 1 400px menjadi 1 1 100% */
     flex: 1 1 100%; 
-    padding: 20px 40px; /* Mengurangi padding atas agar terlihat menyatu dengan gambar */
+    padding: 20px 40px;
     display: flex;
-    flex-direction: column; /* Biarkan ini untuk menjaga tata letak konten di dalamnya */
+    flex-direction: column;
     justify-content: center;
+    /* TAMBAHKAN ATAU UBAH INI: */
+    text-align: center; 
 }
 
 .project-info h3 {
     font-size: 1.8rem;
     margin-bottom: 15px;
     color: var(--secondary-color);
+    text-align: center; 
+    /* TAMBAHKAN INI UNTUK GARIS KUNING */
+    border-bottom: 3px solid var(--primary-color); 
+    padding-bottom: 10px; /* Jarak antara teks dan garis */
+    max-width: fit-content; /* Batasi lebar garis hanya sepanjang teks */
+    margin-left: auto; /* Untuk membuat garis rata tengah */
+    margin-right: auto; /* Untuk membuat garis rata tengah */
 }
 
 .project-metrics {
@@ -215,5 +223,6 @@ footer {
     height: auto; /* Ubah dari 100% (jika ada) ke AUTO */
     display: block;
 }
+
 
 
