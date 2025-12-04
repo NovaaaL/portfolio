@@ -154,12 +154,14 @@ h2::after {
 .project-image {
     flex: 1 1 500px;
     background-color: #eee;
+    /* TAMBAHKAN ATAU PASTIKAN height: auto; ada di sini */
+    height: auto; 
 }
 
 .project-image img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain; /* Ganti 'cover' menjadi 'contain' */
     display: block;
 }
 
@@ -212,3 +214,4 @@ footer {
     height: auto; /* Ubah dari 100% (jika ada) ke AUTO */
     display: block;
 }
+
