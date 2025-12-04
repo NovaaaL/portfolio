@@ -152,10 +152,10 @@ h2::after {
 }
 
 .project-image {
-    flex: 1 1 500px;
+    /* UBAH flex dari 1 1 500px menjadi 1 1 100% */
+    flex: 1 1 100%; 
     background-color: #eee;
-    /* TAMBAHKAN ATAU PASTIKAN height: auto; ada di sini */
-    height: auto; 
+    height: auto;
 }
 
 .project-image img {
@@ -166,10 +166,11 @@ h2::after {
 }
 
 .project-info {
-    flex: 1 1 400px;
-    padding: 40px;
+    /* UBAH flex dari 1 1 400px menjadi 1 1 100% */
+    flex: 1 1 100%; 
+    padding: 20px 40px; /* Mengurangi padding atas agar terlihat menyatu dengan gambar */
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Biarkan ini untuk menjaga tata letak konten di dalamnya */
     justify-content: center;
 }
 
@@ -214,4 +215,5 @@ footer {
     height: auto; /* Ubah dari 100% (jika ada) ke AUTO */
     display: block;
 }
+
 
